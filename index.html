@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online code editor</title>
+    <link rel = stylesheet href = "style.css">
+</head>
+<body>
+    <div class="left">
+        <div class="content">
+            <label>HTML</label>
+            <textarea></textarea>
+        </div>
+        <div class="content">
+            <label>CSS</label>
+            <textarea></textarea>
+            
+        </div>
+        <div class="content">
+            <label>JavaScript</label>
+            <textarea></textarea>
+
+        </div>
+    </div>
+    <div class="right">
+        <label >Output</label>
+        <iframe id = "output">
+
+        </iframe>
+    </div>
+</body>
+<script src = "main.js"></script>
+</html>
+<!-- how to insert text in iframe... -->
+<!-- iframe.contentDocument.body.innerHTML = <h1>Hello world</h1> -->
+
+<!-- how to appy html, css and javascript on iframe
+    let output = document.querySelector('#output')
+    output.contentDocument.body.innerHTML = "<h1>hello buddy</h1>" 
+    output.contentDocument.head.innerHTML = "<style>h1{color:red}</style>"
+    output.contentWindow.eval('let a=10;let b=10;alert(a+b)') -->
